@@ -73,7 +73,7 @@ export default function CounterView({ lastAttackDateString, incidentUrl, inciden
                   className="text-[12rem] sm:text-[16rem] md:text-[220px] leading-none font-black tracking-tighter text-white"
                   style={{ fontFamily: "var(--font-sans)" }}
                >
-                 {days}
+                  {days}
                </motion.div>
              ) : (
                <motion.div
@@ -81,7 +81,7 @@ export default function CounterView({ lastAttackDateString, incidentUrl, inciden
                   className="text-[12rem] sm:text-[16rem] md:text-[220px] leading-none font-black tracking-tighter text-zinc-800 mix-blend-overlay"
                   style={{ fontFamily: "var(--font-sans)" }}
                >
-                 00
+                  00
                </motion.div>
              )}
            </AnimatePresence>
@@ -120,15 +120,6 @@ export default function CounterView({ lastAttackDateString, incidentUrl, inciden
                 <p className="text-xs text-zinc-300">GitHub Advisories</p>
               </div>
             </div>
-            <a 
-              href="https://vercel.com/new" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 bg-white text-black px-6 py-3 rounded-md font-bold text-sm hover:bg-zinc-200 w-max"
-            >
-              <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4"><path d="M24 22.525H0l12-21.05 12 21.05z"/></svg>
-              DEPLOY TO VERCEL
-            </a>
           </div>
         </motion.div>
       </motion.div>

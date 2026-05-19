@@ -1,0 +1,6 @@
+{
+  "name": "Days Since Last Supply Chain Attack",
+  "description": "A visually simple counter tracking days since the last major npm/PyPI supply chain attack. Ready for Vercel deployment.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

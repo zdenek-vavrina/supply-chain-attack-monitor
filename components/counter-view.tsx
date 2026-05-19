@@ -51,13 +51,13 @@ export default function CounterView({ lastAttackDateString, incidentUrl, inciden
           </div>
           
           <div className="mt-4 flex flex-col items-center">
-            <h1 className="text-2xl sm:text-4xl font-light tracking-tight text-zinc-400 uppercase text-center">
+            <h1 className="text-2xl sm:text-4xl font-light tracking-tight text-white uppercase text-center">
               Days since last supply chain attack
             </h1>
             <div className="mt-6 flex flex-wrap justify-center gap-3">
-              <span className="px-3 py-1 bg-zinc-800 text-xs sm:text-sm font-bold rounded border border-zinc-700 uppercase tracking-widest text-zinc-100">NPM</span>
-              <span className="px-3 py-1 bg-zinc-800 text-xs sm:text-sm font-bold rounded border border-zinc-700 uppercase tracking-widest text-zinc-100">PYPI</span>
-              <span className="px-3 py-1 bg-zinc-800 text-xs sm:text-sm font-bold rounded border border-zinc-700 uppercase tracking-widest text-zinc-100">RUBYGEMS</span>
+              <span className="px-3 py-1 bg-zinc-800 text-xs sm:text-sm font-bold rounded border border-zinc-700 uppercase tracking-widest text-white">NPM</span>
+              <span className="px-3 py-1 bg-zinc-800 text-xs sm:text-sm font-bold rounded border border-zinc-700 uppercase tracking-widest text-white">PYPI</span>
+              <span className="px-3 py-1 bg-zinc-800 text-xs sm:text-sm font-bold rounded border border-zinc-700 uppercase tracking-widest text-white">RUBYGEMS</span>
             </div>
           </div>
         </div>
@@ -78,7 +78,7 @@ export default function CounterView({ lastAttackDateString, incidentUrl, inciden
              ) : (
                <motion.div
                   key="placeholder"
-                  className="text-[12rem] sm:text-[16rem] md:text-[220px] leading-none font-black tracking-tighter text-zinc-800 mix-blend-overlay"
+                  className="text-[12rem] sm:text-[16rem] md:text-[220px] leading-none font-black tracking-tighter text-zinc-700 mix-blend-overlay"
                   style={{ fontFamily: "var(--font-sans)" }}
                >
                   00
@@ -94,13 +94,13 @@ export default function CounterView({ lastAttackDateString, incidentUrl, inciden
           className="w-full max-w-5xl mx-auto mt-12 grid gap-6 sm:grid-cols-2 text-left"
         >
           <div className="max-w-md">
-            <p className="text-xs font-mono text-zinc-500 mb-2 uppercase tracking-widest flex items-center gap-2"><AlertTriangle className="w-4 h-4" /> MOST RECENT DETECTION</p>
+            <p className="text-xs font-mono text-zinc-400 mb-2 uppercase tracking-widest flex items-center gap-2"><AlertTriangle className="w-4 h-4" /> MOST RECENT DETECTION</p>
             <a href={incidentUrl} target="_blank" rel="noopener noreferrer" className="block p-4 bg-zinc-900/50 border border-zinc-800 rounded-lg hover:bg-zinc-800 transition-colors group">
-              <h3 className="text-sm font-bold text-zinc-200 uppercase flex items-center gap-2">
+              <h3 className="text-sm font-bold text-white uppercase flex items-center gap-2">
                  <span className="line-clamp-1">{incidentName}</span>
                  <ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
               </h3>
-              <p className="text-xs text-zinc-500 mt-1">
+              <p className="text-xs text-zinc-400 mt-1">
                 Detected on {lastAttackDateString.split('T')[0]}
               </p>
             </a>
@@ -109,22 +109,22 @@ export default function CounterView({ lastAttackDateString, incidentUrl, inciden
           <div className="flex flex-col sm:items-end gap-4 max-w-md sm:ml-auto">
             <div className="flex gap-4">
               <div className="text-left sm:text-right">
-                <p className="text-[10px] text-zinc-500 uppercase font-bold tracking-wider">Service Status</p>
+                <p className="text-[10px] text-zinc-400 uppercase font-bold tracking-wider">Service Status</p>
                 <p className="text-xs text-green-400 flex items-center gap-1 sm:justify-end">
                   <span className="w-1.5 h-1.5 bg-green-400 rounded-full"></span>
                   OPERATIONAL
                 </p>
               </div>
               <div className="text-left sm:text-right pl-4 border-l border-zinc-800">
-                <p className="text-[10px] text-zinc-500 uppercase font-bold tracking-wider">Source</p>
-                <p className="text-xs text-zinc-300">GitHub Advisories</p>
+                <p className="text-[10px] text-zinc-400 uppercase font-bold tracking-wider">Source</p>
+                <p className="text-xs text-white">GitHub Advisories</p>
               </div>
             </div>
           </div>
         </motion.div>
       </motion.div>
       
-      <div className="absolute bottom-6 text-center w-full text-zinc-600 text-sm">
+      <div className="absolute bottom-6 text-center w-full text-zinc-500 text-sm">
         <p>A friendly public service announcement.</p>
         <p className="opacity-60 text-xs mt-1">Not affiliated with npm, Github, or PyPI in any way.</p>
       </div>
